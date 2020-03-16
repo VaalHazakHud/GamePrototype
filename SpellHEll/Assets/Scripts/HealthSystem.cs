@@ -12,6 +12,8 @@ public class HealthSystem : MonoBehaviour
     private int health;
     [SerializeField]
     public int healthMax;
+    [SerializeField]
+    public GameObject deathEffect;
 
     public HealthBar healthBar;
     public HealthBar barHealth;
@@ -41,6 +43,8 @@ public class HealthSystem : MonoBehaviour
     {
         health -= damageAmount;
         if (health < 0) health = 0;
+
+
         //if (OnHealthChanged != null) OnHealthChanged(healthBar.SetBarHealth(health));
     }
 
@@ -53,7 +57,16 @@ public class HealthSystem : MonoBehaviour
 
     void Update()
     {
-       healthBar.SetBarHealth(health);
+        if (health == 0)
+        {
+            GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
+            Destroy(gameObject);
+        }
+
+
+
+        healthBar.SetBarHealth(health);
     }
 }
     
