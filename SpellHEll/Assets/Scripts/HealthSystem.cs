@@ -16,7 +16,7 @@ public class HealthSystem : MonoBehaviour
     public GameObject deathEffect;
 
     public HealthBar healthBar;
-    public HealthBar barHealth;
+    
 
 
 

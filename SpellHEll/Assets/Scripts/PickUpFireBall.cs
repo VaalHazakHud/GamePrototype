@@ -5,26 +5,26 @@ using UnityEngine;
 public class PickUpFireBall : MonoBehaviour
 {
     
-    public GameObject myProjectile;
+    public GameObject myWeapon;
     private GameObject mtemp;
     private SpriteRenderer thisSprite;
 
     private void Start()
     {
         thisSprite = GetComponent<SpriteRenderer>();
-        thisSprite.sprite = myProjectile.GetComponent<SpriteRenderer>().sprite;
-        thisSprite.color = myProjectile.GetComponent<SpriteRenderer>().color;
+        thisSprite.sprite = myWeapon.GetComponent<SpriteRenderer>().sprite;
+        thisSprite.color = myWeapon.GetComponent<SpriteRenderer>().color;
 
     }
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
         {
-            mtemp = other.GetComponent<Shooting>().ActiveProjectile;
-            other.GetComponent<Shooting>().ActiveProjectile = myProjectile;
-            myProjectile = mtemp;
-            thisSprite.sprite = myProjectile.GetComponent<SpriteRenderer>().sprite;
-            thisSprite.color = myProjectile.GetComponent<SpriteRenderer>().color;
+            mtemp = other.GetComponent<Shooting>().ActiveWeapon;
+            other.GetComponent<Shooting>().ActiveWeapon = myWeapon;
+            myWeapon = mtemp;
+            thisSprite.sprite = myWeapon.GetComponent<SpriteRenderer>().sprite;
+            thisSprite.color = myWeapon.GetComponent<SpriteRenderer>().color;
 
 
         }

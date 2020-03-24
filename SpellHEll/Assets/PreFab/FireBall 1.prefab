@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 844457069095779951}
   - component: {fileID: 5152732866035930538}
   - component: {fileID: 3218516995025235081}
+  - component: {fileID: 4426895156041181988}
   m_Layer: 0
   m_Name: FireBall 1
   m_TagString: Untagged
@@ -157,3 +158,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+--- !u!114 &4426895156041181988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844457069095779945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b555880165f70a459691dc6f2b4fe5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoolDown: 0.1
+  AmmoCost: 5
