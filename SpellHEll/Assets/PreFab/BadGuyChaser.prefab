@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4089898779478413553}
   m_Layer: 0
   m_Name: BadGuyChaser
-  m_TagString: Untagged
+  m_TagString: Baddie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,8 +94,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73762306f5f55864a99e724c0f34368b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  stoppingDistance: 10
+  speed: 5
+  stoppingDistance: 2
 --- !u!50 &9166644826504340078
 Rigidbody2D:
   serializedVersion: 4
