@@ -111,4 +111,10 @@ public class Shooting : MonoBehaviour
         }
     }
 
+    public void ManaGain(float manaAmount)
+    {
+        mana += manaAmount;
+        if (mana > manaMax) mana = manaMax;
+    }
+
 }

@@ -9,7 +9,7 @@ public class HealthSystem : MonoBehaviour
 
     //public event UnityEvent OnHealthChanged;
     [SerializeField]
-    private int health;
+    public int health;
     [SerializeField]
     public int healthMax;
     [SerializeField]
