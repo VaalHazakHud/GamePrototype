@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 828101981196797269}
   - component: {fileID: 2834859762062912786}
-  - component: {fileID: 7663272363499371375}
   - component: {fileID: 9166644826504340078}
   - component: {fileID: 4089898779478413553}
+  - component: {fileID: 789072631060214672}
   m_Layer: 0
   m_Name: BadGuyChaser
   m_TagString: Untagged
@@ -82,20 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7663272363499371375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4685334423373494048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73762306f5f55864a99e724c0f34368b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  stoppingDistance: 10
 --- !u!50 &9166644826504340078
 Rigidbody2D:
   serializedVersion: 4
@@ -143,3 +129,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.78, y: 1.75}
   m_EdgeRadius: 0
+--- !u!114 &789072631060214672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4685334423373494048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e894ee67361a8854786e76e6469ed416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  stoppingDistance: 2
+  retreatDistance: 2.5
