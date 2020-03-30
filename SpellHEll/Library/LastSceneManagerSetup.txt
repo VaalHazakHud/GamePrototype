@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SpellHell.unity
+- path: C:/Users/Sabby/Documents/GitHub/GamePrototype/SpellHEll/Assets/SpellHell.unity
   isLoaded: 1
   isActive: 1
